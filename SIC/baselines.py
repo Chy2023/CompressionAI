@@ -59,12 +59,7 @@ def load_network(model_type,quality):
     model=model_type(quality=quality,pretrained=True).eval().to(device)
     return model
 
-def compute_psnr(a, b):
-    mse = torch.mean((a - b)**2).item()
-    return -10 * math.log10(mse)
 
-def compute_msssim(a, b):
-    return -10 * math.log10(1-ms_ssim(a, b, data_range=1.).item())
 
 def compute_bpp(out_net):
     size = out_net['x_hat'].size()
@@ -103,8 +98,6 @@ def _evaluate(model, yolo,dataloader, class_names, img_size, iou_thres, conf_thr
     labels = []
     sample_metrics = []  # List of tuples (TP, confs, pred)
     bpp=0
-    psnr=0
-    msssim=0
     count=0
     for _, imgs, targets in tqdm.tqdm(dataloader, desc="Validating"):
         # Extract labels
@@ -118,8 +111,6 @@ def _evaluate(model, yolo,dataloader, class_names, img_size, iou_thres, conf_thr
             outputs = model(imgs_padded)
             bpp+=compute_bpp(outputs)
             outputs['x_hat']=crop(outputs['x_hat'])
-            psnr+=compute_psnr(imgs,outputs['x_hat'])
-            msssim+=compute_msssim(imgs,outputs['x_hat'])
             imgs=outputs['x_hat'].clamp(0,1)
             yolo_outputs=yolo(imgs)
             yolo_outputs = non_max_suppression(yolo_outputs, conf_thres=conf_thres, iou_thres=nms_thres)
@@ -136,10 +127,8 @@ def _evaluate(model, yolo,dataloader, class_names, img_size, iou_thres, conf_thr
     metrics_output = ap_per_class(
         true_positives, pred_scores, pred_labels, labels)
     bpp=bpp/count
-    psnr=psnr/count
-    msssim=msssim/count
     print_eval_stats(metrics_output, class_names, verbose)
-    print(bpp,psnr,msssim)
+    print(f'average_Bit-rate: {bpp:.2f} bpp')
     return metrics_output
 
 def evaluate_model_file(model, yolo,img_path, class_names, batch_size=8, img_size=416,
@@ -172,11 +161,9 @@ def run():
     class_names =load_classes('/aiarena/gpfs/YOLOv3/data/coco.names')  # List of class names
     yolo=load_yolo()
     for model_type in model_list:
-        for i in range(1,9):
-            if model_type !=cheng2020_attn:
+        for i in range(1,7):
+            if model_type !=bmshj2018_factorized or i!=5:
                 continue
-            if i==7:
-                break
             print(model_type,i)
             model=load_network(model_type,i)
             precision, recall, AP, f1, ap_class = evaluate_model_file(
@@ -191,18 +178,5 @@ def run():
                 conf_thres=args.conf_thres,
                 nms_thres=args.nms_thres,
                 verbose=True)
-    """ model=load_network(bmshj2018_factorized,8)
-    precision, recall, AP, f1, ap_class = evaluate_model_file(
-        model,
-        yolo,
-        valid_path,
-        class_names,
-        batch_size=args.batch_size,
-        img_size=args.img_size,
-        n_cpu=args.n_cpu,
-        iou_thres=args.iou_thres,
-        conf_thres=args.conf_thres,
-        nms_thres=args.nms_thres,
-        verbose=True) """
 if __name__ == "__main__":
     run()

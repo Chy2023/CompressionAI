@@ -105,8 +105,6 @@ def _evaluate(model, dataloader, class_names, img_size, iou_thres, conf_thres, n
     labels = []
     sample_metrics = []  # List of tuples (TP, confs, pred)
     bpp=0
-    psnr=0
-    msssim=0
     count=0
     for _, imgs, targets in tqdm.tqdm(dataloader, desc="Validating"):
         # Extract labels
@@ -120,8 +118,6 @@ def _evaluate(model, dataloader, class_names, img_size, iou_thres, conf_thres, n
         with torch.no_grad():
             outputs = model(imgs)
             bpp+=compute_bpp(outputs)
-            psnr+=compute_psnr(imgs,outputs['x_hat'])
-            msssim+=compute_msssim(imgs,outputs['x_hat'])
             yolo_outputs=model.yolo.BackEnd(outputs['feature'],img_size=416)
             #yolo_outputs=model.yolo.BackEnd(outputs['feature_target'],img_size=416)
             #yolo_outputs=model.yolo(imgs)
@@ -139,10 +135,8 @@ def _evaluate(model, dataloader, class_names, img_size, iou_thres, conf_thres, n
     metrics_output = ap_per_class(
         true_positives, pred_scores, pred_labels, labels)
     bpp=bpp/count
-    psnr=psnr/count
-    msssim=msssim/count
     print_eval_stats(metrics_output, class_names, verbose)
-    print(bpp,psnr,msssim)
+    print(f'average_Bit-rate: {bpp:.2f} bpp')
     return metrics_output
 
 
@@ -171,18 +165,14 @@ def _create_validation_data_loader(img_path, batch_size, img_size, n_cpu):
         collate_fn=dataset.collate_fn)
     return dataloader
 
-def compute_psnr(a, b):
-    mse = torch.mean((a - b)**2).item()
-    return -10 * math.log10(mse)
 
-def compute_msssim(a, b):
-    return -10 * math.log10(1-ms_ssim(a, b, data_range=1.).item())
 
 def compute_bpp(out_net):
     size = out_net['x_hat'].size()
     num_pixels = size[0] * size[2] * size[3]
-    return sum(torch.log(likelihoods).sum() / (-math.log(2) * num_pixels)
-              for likelihoods in out_net['likelihoods'].values()).item()
+    likelihoods=[out_net['likelihoods']['y_0'],out_net['likelihoods']['z']]
+    return sum(torch.log(likelihood).sum() / (-math.log(2) * num_pixels)
+              for likelihood in likelihoods).item()
 
 def run():
     parser = argparse.ArgumentParser(description="Evaluate validation data.")

@@ -58,11 +58,14 @@ class Choi2022(Cheng2020Anchor):
         
     def forward(self,x):
         y=self.g_a(x)
+        padding=1
+        flag=False
+        if y.size(2)%4!=0:
+            y=F.pad(y, (padding, padding, padding, padding))
+            flag=True
         z=self.h_a(y)
         z_hat,z_likelihoods=self.entropy_bottleneck(z)
         params=self.h_s(z_hat)
-        padding=1
-        params=F.pad(params, (-padding, -padding, -padding, -padding))
         params=torch.split(params,[i*2 for i in self.groups],dim=1)
         y_=torch.split(y,self.groups,dim=1)
         y_hat=[self.gaussian_conditional[i].quantize(y_[i],'noise' if self.training else 'dequantize')
@@ -75,6 +78,9 @@ class Choi2022(Cheng2020Anchor):
             scales_hat,means_hat=gaussian_params[i].chunk(2,1)
             _,_likelihoods=self.gaussian_conditional[i](y_[i],scales_hat,means=means_hat)
             likelihoods[i]=_likelihoods
+        if flag:
+            y_hat=[F.pad(y_i, (-padding, -padding, -padding, -padding)) for y_i in y_hat]
+            likelihoods=[F.pad(likelihood, (-padding, -padding, -padding, -padding)) for likelihood in likelihoods]
         x_hat=self.g_s(torch.cat(y_hat,dim=1))
 
         #task-relevant feature maps

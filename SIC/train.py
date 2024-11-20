@@ -327,8 +327,8 @@ def parse_args(argv):
         "--patch-size",
         type=int,
         nargs=2,
-        #default=(256, 256),
-        default=(416, 416),
+        default=(256, 256),
+        #default=(416, 416),
         help="Size of the patches to be cropped (default: %(default)s)",
     )
     parser.add_argument("--seed", type=int, help="Set random seed for reproducibility")
@@ -352,7 +352,7 @@ def main(argv):
         random.seed(args.seed)
     
     if args.id is not None:
-        wandb.init(project='Choi2022',name=f'experiment_{run_name}',config=vars(args),resume=True,id=args.id)
+        wandb.init(project='Choi2022',name=f'experiment_{run_name}',config=vars(args),resume='must',id=args.id)
     else:
         wandb.init(project='Choi2022',name=f'experiment_{run_name}',config=vars(args))
     
