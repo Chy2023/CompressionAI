@@ -162,8 +162,8 @@ def run():
     yolo=load_yolo()
     for model_type in model_list:
         for i in range(1,7):
-            if model_type !=bmshj2018_factorized or i!=5:
-                continue
+            """ if model_type !=bmshj2018_factorized or i!=5:
+                continue """
             print(model_type,i)
             model=load_network(model_type,i)
             precision, recall, AP, f1, ap_class = evaluate_model_file(

@@ -1,0 +1,469 @@
+checkpoint_2024-11-26_20:55:53.pt,q=1
+[34m[1m_test: [0mdata=data/coco.yaml, checkpoint=checkpoint_2024-11-26_20:55:53.pt, weights=yolov5s.pt, batch_size=16, imgsz=640, conf_thres=0.001, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=runs/val, name=exp, exist_ok=False, half=False, dnn=False
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.611      0.412      0.449      0.285
+Speed: 0.1ms pre-process, 41.1ms inference, 1.0ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp58[0m
+bitrate:0.07699324504826396
+checkpoint_2024-11-27_23:28:00.pt,q=2
+[34m[1m_test: [0mdata=data/coco.yaml, checkpoint=checkpoint_2024-11-27_23:28:00.pt, weights=yolov5s.pt, batch_size=16, imgsz=640, conf_thres=0.001, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=runs/val, name=exp, exist_ok=False, half=False, dnn=False
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335       0.62      0.443      0.478      0.307
+Speed: 0.1ms pre-process, 41.1ms inference, 1.0ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp59[0m
+bitrate:0.11258037745381316
+checkpoint_2024-11-27_23:28:20.pt,q=3
+[34m[1m_test: [0mdata=data/coco.yaml, checkpoint=checkpoint_2024-11-27_23:28:20.pt, weights=yolov5s.pt, batch_size=16, imgsz=640, conf_thres=0.001, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=runs/val, name=exp, exist_ok=False, half=False, dnn=False
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.644      0.466       0.51      0.331
+Speed: 0.1ms pre-process, 41.0ms inference, 1.0ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp60[0m
+bitrate:0.1959023648938432
+checkpoint_2024-11-26_20:25:14.pt,q=4
+[34m[1m_test: [0mdata=data/coco.yaml, checkpoint=checkpoint_2024-11-26_20:25:14.pt, weights=yolov5s.pt, batch_size=16, imgsz=640, conf_thres=0.001, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=runs/val, name=exp, exist_ok=False, half=False, dnn=False
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.665      0.497      0.548      0.358
+Speed: 0.1ms pre-process, 40.9ms inference, 1.3ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp61[0m
+bitrate:0.32806215052025767
+checkpoint_2024-11-27_23:28:39.pt,q=5
+[34m[1m_test: [0mdata=data/coco.yaml, checkpoint=checkpoint_2024-11-27_23:28:39.pt, weights=yolov5s.pt, batch_size=16, imgsz=640, conf_thres=0.001, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=runs/val, name=exp, exist_ok=False, half=False, dnn=False
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.667      0.507      0.555      0.364
+Speed: 0.1ms pre-process, 41.0ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp62[0m
+bitrate:0.4804632891290866
+checkpoint_2024-11-26_20:54:58.pt,q=6
+[34m[1m_test: [0mdata=data/coco.yaml, checkpoint=checkpoint_2024-11-26_20:54:58.pt, weights=yolov5s.pt, batch_size=16, imgsz=640, conf_thres=0.001, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=runs/val, name=exp, exist_ok=False, half=False, dnn=False
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.664      0.513      0.557      0.365
+Speed: 0.1ms pre-process, 40.9ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp63[0m
+bitrate:0.654882417509731
+checkpoint_2024-11-26_20:55:53.pt,q=1
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+Loading checkpoint_2024-11-26_20:55:53.pt
+average_Bit-rate: 0.12 bpp
+average_PSNR: 28.55 dB
+average_MS-SSIM: 11.67 dB
+checkpoint_2024-11-27_23:28:00.pt,q=2
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+Loading checkpoint_2024-11-27_23:28:00.pt
+average_Bit-rate: 0.20 bpp
+average_PSNR: 29.84 dB
+average_MS-SSIM: 13.15 dB
+checkpoint_2024-11-27_23:28:20.pt,q=3
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+Loading checkpoint_2024-11-27_23:28:20.pt
+average_Bit-rate: 0.31 bpp
+average_PSNR: 31.12 dB
+average_MS-SSIM: 14.74 dB
+checkpoint_2024-11-26_20:25:14.pt,q=4
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+Loading checkpoint_2024-11-26_20:25:14.pt
+average_Bit-rate: 0.49 bpp
+average_PSNR: 33.47 dB
+average_MS-SSIM: 16.97 dB
+checkpoint_2024-11-27_23:28:39.pt,q=5
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+Loading checkpoint_2024-11-27_23:28:39.pt
+average_Bit-rate: 0.72 bpp
+average_PSNR: 35.53 dB
+average_MS-SSIM: 19.19 dB
+checkpoint_2024-11-26_20:54:58.pt,q=6
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+Loading checkpoint_2024-11-26_20:54:58.pt
+average_Bit-rate: 1.00 bpp
+average_PSNR: 37.14 dB
+average_MS-SSIM: 20.97 dB
+[34m[1m_baselines: [0mdata=data/coco.yaml, checkpoint=checkpoint_best_loss.pth.tar, weights=yolov5s.pt, batch_size=16, imgsz=640, conf_thres=0.001, iou_thres=0.6, max_det=300, task=val, device=, workers=8, single_cls=False, augment=False, verbose=False, save_txt=False, save_hybrid=False, save_conf=False, save_json=False, project=runs/val, name=exp, exist_ok=False, half=False, dnn=False
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_factorized at 0x7f475e929750> 1
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335       0.55      0.363      0.382      0.238
+Speed: 0.1ms pre-process, 6.9ms inference, 1.4ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp64[0m
+bitrate:0.11158001384796046
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_factorized at 0x7f475e929750> 2
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.571      0.414      0.439      0.278
+Speed: 0.1ms pre-process, 6.6ms inference, 1.4ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp65[0m
+bitrate:0.1662134319162978
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_factorized at 0x7f475e929750> 3
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.617       0.45      0.487      0.311
+Speed: 0.1ms pre-process, 6.6ms inference, 1.3ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp66[0m
+bitrate:0.24818073313076275
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_factorized at 0x7f475e929750> 4
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.647      0.468      0.516      0.333
+Speed: 0.1ms pre-process, 6.6ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp67[0m
+bitrate:0.3733940121655266
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_factorized at 0x7f475e929750> 5
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.665      0.485      0.537       0.35
+Speed: 0.1ms pre-process, 6.6ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp68[0m
+bitrate:0.546909342463405
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_factorized at 0x7f475e929750> 6
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.663      0.508      0.552       0.36
+Speed: 0.1ms pre-process, 11.9ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp69[0m
+bitrate:0.8433206713618562
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_hyperprior at 0x7f475e929870> 1
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.579      0.393      0.421      0.264
+Speed: 0.1ms pre-process, 6.3ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp70[0m
+bitrate:0.11303227011578533
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_hyperprior at 0x7f475e929870> 2
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.606      0.436      0.474      0.301
+Speed: 0.1ms pre-process, 6.3ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp71[0m
+bitrate:0.17701541394376144
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_hyperprior at 0x7f475e929870> 3
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335       0.64      0.465      0.509      0.327
+Speed: 0.1ms pre-process, 6.3ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp72[0m
+bitrate:0.2684308438064953
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_hyperprior at 0x7f475e929870> 4
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.653      0.488      0.532      0.345
+Speed: 0.1ms pre-process, 6.3ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp73[0m
+bitrate:0.3975200902539701
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_hyperprior at 0x7f475e929870> 5
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.662      0.502      0.548      0.356
+Speed: 0.1ms pre-process, 6.3ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp74[0m
+bitrate:0.5423929788434086
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function bmshj2018_hyperprior at 0x7f475e929870> 6
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.663      0.511      0.556      0.364
+Speed: 0.1ms pre-process, 11.4ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp75[0m
+bitrate:0.8066730674463339
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018_mean at 0x7f475e929900> 1
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.573      0.396      0.423      0.265
+Speed: 0.1ms pre-process, 6.5ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp76[0m
+bitrate:0.10772445690803253
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018_mean at 0x7f475e929900> 2
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.617      0.442      0.479      0.304
+Speed: 0.1ms pre-process, 6.5ms inference, 1.3ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp77[0m
+bitrate:0.16753138173312043
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018_mean at 0x7f475e929900> 3
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.632      0.474      0.513       0.33
+Speed: 0.1ms pre-process, 6.5ms inference, 1.3ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp78[0m
+bitrate:0.25861059624356586
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018_mean at 0x7f475e929900> 4
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.657      0.488      0.533      0.345
+Speed: 0.1ms pre-process, 6.5ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp79[0m
+bitrate:0.38315917484866924
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018_mean at 0x7f475e929900> 5
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.664      0.503      0.548      0.357
+Speed: 0.1ms pre-process, 11.5ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp80[0m
+bitrate:0.5863840811359234
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018_mean at 0x7f475e929900> 6
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.662      0.513      0.556      0.363
+Speed: 0.1ms pre-process, 11.5ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp81[0m
+bitrate:0.7948901431438641
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018 at 0x7f475e929990> 1
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.581      0.401      0.428      0.268
+Speed: 0.1ms pre-process, 11.4ms inference, 1.3ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp82[0m
+bitrate:0.09376114389052786
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018 at 0x7f475e929990> 2
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.616      0.437      0.476      0.303
+Speed: 0.1ms pre-process, 11.4ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp83[0m
+bitrate:0.16320377395461544
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018 at 0x7f475e929990> 3
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.636       0.47      0.516      0.332
+Speed: 0.1ms pre-process, 11.4ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp84[0m
+bitrate:0.2421077782163224
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018 at 0x7f475e929990> 4
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.652      0.487      0.534      0.346
+Speed: 0.1ms pre-process, 11.4ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp85[0m
+bitrate:0.35911877996053176
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018 at 0x7f475e929990> 5
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335       0.66      0.508      0.549      0.358
+Speed: 0.1ms pre-process, 12.2ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp86[0m
+bitrate:0.5510834865867139
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function mbt2018 at 0x7f475e929990> 6
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.667      0.511      0.556      0.363
+Speed: 0.1ms pre-process, 12.2ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp87[0m
+bitrate:0.7562286957574729
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_anchor at 0x7f475e929a20> 1
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.584      0.394      0.428      0.268
+Speed: 0.1ms pre-process, 19.1ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp88[0m
+bitrate:0.10536967761838398
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_anchor at 0x7f475e929a20> 2
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.605      0.436      0.472      0.299
+Speed: 0.1ms pre-process, 19.1ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp89[0m
+bitrate:0.1557900749932463
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_anchor at 0x7f475e929a20> 3
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.619      0.462      0.502      0.323
+Speed: 0.1ms pre-process, 19.1ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp90[0m
+bitrate:0.22038836448718183
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_anchor at 0x7f475e929a20> 4
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.643      0.487      0.519      0.334
+Speed: 0.1ms pre-process, 39.1ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp91[0m
+bitrate:0.3512851006021134
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_anchor at 0x7f475e929a20> 5
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.642      0.504      0.531      0.344
+Speed: 0.1ms pre-process, 39.1ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp92[0m
+bitrate:0.4855395498367163
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_anchor at 0x7f475e929a20> 6
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.657       0.51      0.545      0.355
+Speed: 0.1ms pre-process, 39.1ms inference, 1.2ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp93[0m
+bitrate:0.647483683432253
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_attn at 0x7f475e929ab0> 1
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.595      0.408      0.441      0.276
+Speed: 0.1ms pre-process, 23.3ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp94[0m
+bitrate:0.10198536831826067
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_attn at 0x7f475e929ab0> 2
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.631      0.446      0.485      0.308
+Speed: 0.1ms pre-process, 23.3ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp95[0m
+bitrate:0.15148476013741174
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_attn at 0x7f475e929ab0> 3
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.634       0.47      0.512      0.328
+Speed: 0.1ms pre-process, 23.3ms inference, 1.1ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp96[0m
+bitrate:0.2178677842259026
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_attn at 0x7f475e929ab0> 4
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.649      0.485      0.532      0.345
+Speed: 0.1ms pre-process, 46.5ms inference, 1.3ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp97[0m
+bitrate:0.3611791392865653
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_attn at 0x7f475e929ab0> 5
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.661      0.498      0.544      0.353
+Speed: 0.1ms pre-process, 46.4ms inference, 1.3ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp98[0m
+bitrate:0.48651679007770915
+YOLOv5 🚀 2024-11-25 Python-3.10.11 torch-2.0.1 CUDA:0 (NVIDIA GeForce RTX 3090, 24260MiB)
+
+YOLOv5s summary: 214 layers, 7235389 parameters, 7235389 gradients, 16.6 GFLOPs
+
+<function cheng2020_attn at 0x7f475e929ab0> 6
+[34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s][34m[1mval: [0mScanning /aiarena/group/icgroup/data/coco/val2017.cache... 4952 images, 48 backgrounds, 0 corrupt: 100%|██████████| 5000/5000 [00:00<?, ?it/s]
+                   all       5000      36335      0.663      0.512      0.554      0.361
+Speed: 0.1ms pre-process, 46.4ms inference, 1.3ms NMS per image at shape (16, 3, 640, 640)
+Results saved to [1mruns/val/exp99[0m
+bitrate:0.6495343555276767

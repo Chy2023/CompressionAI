@@ -8,20 +8,17 @@ import torch.optim as optim
 
 from torch.utils.data import DataLoader
 from torchvision import transforms
-
+from compressai.datasets import ImageFolder
 
 from pytorch_msssim import ms_ssim
 from compressai.optimizers import net_aux_optimizer
-from model import Choi2022
+from _model import Choi2022
 import math
 
 from typing import Any, Dict, Mapping, cast
 from compressai.registry import OPTIMIZERS
 
-from pathlib import Path
 
-from PIL import Image
-from torch.utils.data import Dataset
 import os
 import datetime
 import pytz
@@ -29,50 +26,6 @@ import wandb
 os.environ["WANDB_API_KEY"]='0605d04eb3ad284166eaf3e324a3fd9c51a8559b'
 lmbda_list=[0,0.0018,0.0035,0.0067,0.013,0.025,0.0483]
 run_name=datetime.datetime.now(pytz.timezone('Asia/Shanghai')).strftime("%Y-%m-%d_%H:%M:%S")
-
-class ImageFolder(Dataset):
-
-    def __init__(self, root,size, transform=None, split="train"):
-        
-
-        #self.samples = sorted(f for f in splitdir.iterdir() if f.is_file())
-        self.samples=[]
-        if root.endswith(".txt"):
-            with open(root, "r") as file:
-                img_files = file.readlines()
-            img_files=[line.rstrip() for line in img_files]
-            for f in img_files:
-                if not os.path.isfile(f):
-                    continue
-                img=Image.open(f)
-                if img.width<size or img.height<size:
-                    continue 
-                self.samples.append(f)
-        else:
-            splitdir = Path(root) / split
-            if not splitdir.is_dir():
-                raise RuntimeError(f'Missing directory "{splitdir}"')
-            for f in splitdir.iterdir():
-                if not f.is_file():
-                    continue
-                img=Image.open(f)
-                if img.width<size or img.height<size:
-                    continue 
-                self.samples.append(f)
-        self.samples=sorted(self.samples)
-        self.transform = transform
-
-    def __getitem__(self, index):
-        img = Image.open(self.samples[index]).convert("RGB")
-        if self.transform:
-            return self.transform(img)
-        return img
-
-    def __len__(self):
-        return len(self.samples)
-
-
-
 
 def net_aux_optimizer(
     net: nn.Module, conf: Mapping[str, Any]
@@ -328,7 +281,6 @@ def parse_args(argv):
         type=int,
         nargs=2,
         default=(256, 256),
-        #default=(416, 416),
         help="Size of the patches to be cropped (default: %(default)s)",
     )
     parser.add_argument("--seed", type=int, help="Set random seed for reproducibility")
@@ -363,9 +315,8 @@ def main(argv):
     test_transforms = transforms.Compose(
         [transforms.CenterCrop(args.patch_size), transforms.ToTensor()]
     )
-    size=args.patch_size[0]
-    train_dataset = ImageFolder(args.dataset, size,split="train", transform=train_transforms)
-    test_dataset = ImageFolder(args.dataset, size,split="test", transform=test_transforms)
+    train_dataset = ImageFolder(args.dataset,split="train", transform=train_transforms)
+    test_dataset = ImageFolder(args.dataset,split="test", transform=test_transforms)
     #train on coco_val2017 dataset
     """ train_dataset = ImageFolder(args.dataset, size,split="val2017", transform=train_transforms)
     test_dataset = ImageFolder(args.dataset, size,split="val2017", transform=test_transforms) """
@@ -444,6 +395,13 @@ def main(argv):
                     "lr_scheduler": lr_scheduler.state_dict(),
                 }
             torch.save(state,f'checkpoint_{run_name}.pth.tar')
+    #only retain model.state_dict when training is done
+    ckpt=torch.load(f'checkpoint_{run_name}.pth.tar',map_location=device)
+    csd=ckpt['state_dict']
+    state={'state_dict':csd}
+    torch.save(state,f'checkpoint_{run_name}.pt')
+    os.remove(f'checkpoint_{run_name}.pth.tar')
+
     wandb.finish()
 
 if __name__ == "__main__":
